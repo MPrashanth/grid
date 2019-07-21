@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+    grid-template-rows: 70px auto;
+    grid-template-areas: "topbar topbar" "leftbar content";
+    grid-gap: 10px;
+}
+.topbar{
+    
+    grid-area: topbar; 
+    background-color: aquamarine;
+}
+.leftbar{
+    
+    grid-area: leftbar;
+    background-color: #d5dcd8;
+}
+.content{
+    grid-area: content; 
+    background-color:white;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px ;
+    grid-template-areas: "box1 box1 box2 box2 box3 box3 "
+                           ". . box4 box5 box5 box5" 
+                            "box6 box6 box6 box7 box7 box7";
+    grid-gap: 10px;
+   
+}
+.box1{
+    grid-area: box1;
+    height: 300px;
+    background-color: khaki;
+    
+}
+
+.box2{
+    grid-area: box2;
+    height: 300px;
+    background-color: khaki;
+}
+.box3{
+    grid-area: box3;
+    height: 300px;
+    background-color: khaki;
+}
+.box4{
+    grid-area: box4;
+    grid-column: 1/4;
+    height: 300px;
+    background-color: khaki;
+}
+.box5{
+    grid-area: box5;
+    grid-column: 4/7;
+    height: 300px;
+    background-color: khaki;
+}
+.box6{
+    grid-area: box6;
+    height: 300px;
+    background-color: khaki;
+}
+.box7{
+    grid-area: box7;
+    height: 300px;
+    background-color: khaki;
+}
+.mat-nav-list a.active {
+    background: blue;
+}
